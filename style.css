@@ -1,0 +1,129 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+    
+}
+body{
+    background-image: url(Jagger\ logo.png);    
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(10, 10, 10);
+
+}
+header{
+    background-color: rgb(253, 252, 252);
+    /*min-width: 320PX;
+    max-width: 100%;
+    min-height: 120px;*/
+border-radius: 0px 0px 2px 2px;
+box-shadow: rgba(0, 0, 0, 0.363) 3px 4px 13px;
+    
+}
+img:hover{
+width: 80px;
+height: 80px;
+}
+header>h1{
+    display: block;
+    margin: auto;
+    width: 300px;
+    background-color: transparent;
+   
+    box-shadow: rgba(0, 0, 0, 0.116) 1px 0.2px 10px;
+}
+header>h1:hover{
+    color: rgb(4, 16, 27);
+}
+header>p#button{
+    
+    text-align: right;
+    display:flex
+     ;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
+    gap: 10px;
+
+    
+
+    
+
+}
+.button{padding-top: 0px;
+    height: 30px;
+    width: 70px;
+    background-color: transparent;
+    border: 0px;
+    color: rgb(24, 20, 20);
+}
+.button:hover{
+    color: rgb(246, 248, 248);
+    font-size: large;
+    border-width: 4px;
+    background-color: rgb(46, 146, 204);
+    border-radius: 5px;
+}
+a{margin: 0px;
+    text-decoration: none;
+    color: rgb(32, 28, 28);
+    box-shadow: rgba(0, 0, 0, 0.116) 1px 0.2px 10px;
+}
+a:hover{
+    text-decoration: underline;
+    font-size: 17px;
+}
+nav{
+    display:flex
+     ;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+    gap: 10px;
+    padding-top: 140px;
+    padding-bottom: 20px;
+
+    margin-left: 20px;
+    
+   
+
+    
+}
+main{ margin: auto;
+    /*#00C2DB*/;
+    max-width: 1500px;
+    min-width: 320px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.363) 3px 4px 13px;
+    /*box-shadow: rgba(0, 0, 0, 1.363) -8px 14px 78px;*/
+}
+#firstsection{
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(238, 230, 230)
+}
+#secondsection{
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(243, 237, 237)
+}
+.head{ margin: auto;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    margin-top: 60px;
+
+}
+.head:hover{
+    font-size: 20pt;
+}
+.info{ text-indent: 40px;
+     margin: auto;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 15pt;
+    padding: 25px;
+}
+footer{
+    color: bisque;
+    margin: auto;
+    max-width: 1000px;
+}

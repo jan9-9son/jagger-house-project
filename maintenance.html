@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Repair Request </title>
+  <link rel="stylesheet" href="st.css">
+</head>
+<body>
+  <h1>Repair Request </h1>
+  <form>
+    <label for="name">What is your name?</label>
+    <input type="text" id="name" required><br><br>
+
+    <label for="issue">What is broken or needs to be repaired?</label>
+    <input type="text" id="issue" required><br><br>
+
+    <label for="dorm">What dorm are you in?</label>
+    <input type="number" id="dorm" required><br><br>
+
+    <label for="date">When did you notice that?</label>
+    <input type="date" id="date" required><br><br>
+
+    <input type="submit" value="Submit" onclick="submitForm(event)">
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+
+      var name = $('#name').val();
+      var issue = $('#issue').val();
+      var dorm = $('#dorm').val();
+      var date = $('#date').val();
+
+      $.ajax({
+        url: 'https://script.google.com/macros/s/1nS_udKL2PzJVpRUcm4vkzDNey6wFOW8JlIy6DWWMcz4MTkCIaWJDo1jr/exec',
+        method: 'GET',
+        dataType: 'json',
+        data: {
+          'Name': name,
+          'Issue': issue,
+          'Dorm': dorm,
+          'Date': date
+        },
+        success: function(response) {
+          alert('Form submitted successfully!');
+          // You can add further logic or UI updates here
+        },
+        error: function(xhr, status, error) {
+          alert('An error occurred while submitting the form. Please try again later.');
+          // Handle error scenarios here
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    Hi World
+    <header>
+        <div>
+        <h1 id="greeting"></h1>
+    </header>
+<main>
+    <section class="inputs">
+   <input type="email" name="emailinput" id="emailtxt" placeholder="Enter your school email"><br>
+   <input type="password" id="passwordtxt" placeholder="Enter your password" ><br>
+   <input type="button" value="Login">
+   <input type="checkbox" name="" onclick="showpass()">Show password
+    </section>
+  <section class="recovery"> <p>Never ask on this device<input type="checkbox" name="loged" id="logedtxt"></p>
+   <p><a href="#">Forgot password?</a></p>
+</section>
+</main>
+<script>
+    
+    let greeting = document.getElementById('greeting');
+    let date= new Date();
+    let time= date.getHours();
 
+    
+   if(time<12&&time>=0){
+     greeting.innerHTML='Good Morning , welcome to jagger website'
+   }
+   if(time>=12&&time<=17){
+    greeting.innerHTML="Good afternoon, welcome to jagger website"
+   }
+   if(time>17&&time!=0){
+    greeting.innerHTML='Good evening, welcome to jagger website'
+   }
+   function showpass(){
+    var s=document.getElementById("passwordtxt")
+    if(s.type==="password"){
+        s.type="text";
+    }
+    else{
+        s.type="password"
+    }
+   }
+</script>
 </body>
 </html>

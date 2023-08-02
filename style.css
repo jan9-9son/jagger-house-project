@@ -1,15 +1,21 @@
 
 
 body{
-    
+    background-image: url(Jagger\ logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-height: 97vh;
+
 
 margin: 0px;
 }
 header{
+    color: #ffff;
    padding-top: 10px;
-    background-color: #fff;
+    background-color: #000000;
+    
 }
 header>p#button{
         display:flex
@@ -25,33 +31,58 @@ header>p#button{
     
     }
     input{
+        color: #ffff;
         background-color: transparent;
         border: 0px;
     }
+    input:hover{
+        border-radius: 6px;
+        color: #000000;
+        background-color: #fff;
+    }
     h1{
         text-align: center;
-        font-size: 8vw;
+        font-size: 5vw;
     }
   a{
            
           
         margin-left: 5px;
         text-decoration: none;
-        color: #000;
-        font-size: 3vw;
+        color: #f0ecec;
+        font-size: 2vw;
 
 
     }
-    main{
+    a:hover{
+        border-radius: 5px;
+        color: #000000;
         background-color: #fff;
+    }
+    main{width: 1000px;
+        margin: auto;
+        background-image: url();
+        background-color: rgb(0, 0, 0);
       
     }
-    h2{
-        background-color: lime;
-        border-radius: 2px;
+    h2{ color: #ffffff;
+        background-color: rgb(0, 0, 0);
+        border-radius: 6px 6px 0px 0px;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        font-size: 2vw;
+        text-align: center;
+
 
     }
     .info{
-        background-color: rgb(238, 109, 16);
-        bg 
+        padding: 10px;
+        text-align: justify; 
+        
+        border-radius: 0px 0px 6px 6px ;
+        margin-top:0px ;
+        
+        color: #fff;
+        font-size: 1vw;
     }

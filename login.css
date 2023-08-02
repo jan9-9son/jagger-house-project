@@ -1,24 +1,26 @@
 body{
+  height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 97vh;
-    width: 100vw;
-    margin: auto;
+    background-image: url(Jagger\ logo.png);
+    color: #ffff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#greeting{
     text-align: center;
+    background-color: #0000;
+    font-size: 4vw;
 }
-header{
-    width: 30%vw;
-}
-.inputs{
+main{
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 40vw;
+    height: 20vh;
+    
    
-    margin: 10px;
-   background-color: rgb(0, 255, 242);
-}
-.recovery{
-    
-}
-input{
-    
-margin-bottom: 5px;
-    width: 15vw;
-    height: 2vh;
+    background-color: #535151;
+    margin: 250px;
+    border-radius: 10px;
 }
